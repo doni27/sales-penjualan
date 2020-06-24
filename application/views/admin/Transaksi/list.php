@@ -40,7 +40,15 @@ $total = $this->transaksi_model->total_keranjang($user->id_transaksi);
 
 </td>
 
-<td><?php foreach($keranjang as $keranjang){ 
+
+
+
+<td>
+
+
+
+
+<?php foreach($keranjang as $keranjang){ 
 ?>
 <?php echo $keranjang->nama_barang; ?>,&nbsp; &nbsp;  Jumlah  <label class="btn-xs btn-success" ><?php echo $keranjang->jumlah; ?>  </label>  <br>
 Total  Rp <?php echo number_format($keranjang->total ,'0',',','.') ?>&nbsp; &nbsp;  <a href="<?= base_url('admin/transaksi/delete_keranjang/'.$keranjang->id_keranjang)?>" class="btn-xs btn-danger  " onclick="return comfirm('yakin ingin menghapus data ini')"><i class="fa fa-trash-o"></i> Delete </a>
