@@ -30,7 +30,7 @@
     "chai": "^3.5.0",
     "docsify-cli": "^4.1.12",
     "mocha": "^3.2.0",
-    "open": "^0.0.5",
+    "open": "^6.0.0",
     "rollup": "^0.42.0",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-eslint": "^3.0.0",
